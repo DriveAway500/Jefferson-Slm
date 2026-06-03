@@ -2,29 +2,29 @@ from pathlib import Path
 
 class LoadPath():
 
-    # @staticmethod
-    # def load_file_path(extension):
+    @staticmethod
+    def loadby_extension_path(extension):
 
-    #     base_path = Path(__file__).resolve().parent
-    #     data_path = base_path.parent / "data/"
+        base_path = Path(__file__).resolve().parent
+        data_path = base_path.parent / "data/raw/"
 
-    #     extension=list(extension.split(", "))
+        extension=list(extension.split(", "))
 
-    #     files=[]
+        files=[]
 
-    #     for ext in extension:
-    #             files_path= list(data_path.rglob(ext))
-    #             files.extend(files_path)
+        for ext in extension:
+                files_path= list(data_path.rglob(ext))
+                files.extend(files_path)
 
-    #     return files
+        return files
 
     @staticmethod
-    def load_file_path():
+    def loadby_txt_file_path():
 
         # only for .txt
         base_path = Path(__file__).resolve().parent
 
-        data_path = base_path.parent / "data/"
+        data_path = base_path.parent / "data/raw/"
 
         files= list(data_path.rglob("*.txt"))
 

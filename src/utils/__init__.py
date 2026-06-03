@@ -1,1 +1,1 @@
-from .load_path import LoadPath
+from .text_cleaner import DataCleaner

@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# some files to block
+*.txt
+!requirements.txt
+*.bin

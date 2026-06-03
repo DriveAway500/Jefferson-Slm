@@ -1,12 +1,12 @@
 import re
 
-from utils import LoadPath
+from .load_path import LoadPath
 
 class DataCleaner():
 
     @staticmethod
     def load_text_content():
-        text_path = LoadPath.load_file_path()
+        text_path = LoadPath.loadby_txt_file_path()
 
         content= []
         for path in text_path:

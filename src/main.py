@@ -1,13 +1,7 @@
-# from token_gen import DataCleaner
-
-# def main():
-#     clean_data= DataCleaner.training_data_loader()
-#     print(clean_data)
-
-from token_gen import TokenTrainer
+from data_prepare import Prepare
 
 def main():
-    TokenTrainer.train()
+    Prepare.prepare()
 
 if __name__ == '__main__':
     main()
