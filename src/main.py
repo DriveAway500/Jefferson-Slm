@@ -1,7 +1,7 @@
-from data_prepare import Prepare
+from core import Commands
 
 def main():
-    Prepare.prepare()
+    Commands.commandsetup()
 
 if __name__ == '__main__':
     main()
